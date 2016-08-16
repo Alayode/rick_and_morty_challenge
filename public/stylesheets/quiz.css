@@ -59,3 +59,24 @@ body { background-color: #fff; padding: 20px; }
 #rickNmortyQuiz   .feedback strong { color: #fff; }
 
 #rickNmortyQuiz   .answered .feedback { visibility: visible; opacity: 1; margin-top: 10px; }
+
+/* Results */
+
+#rickNmortyQuiz .results { position: absolute; top:440px; left:660px; width:550px; }
+
+#rickNmortyQuiz .results .share { margin-top:40px; }
+
+
+#rickNmortyQuiz  .results .share a.button { 
+    margin-right: 20px; padding:5px 15px 5px 30px;
+    background-repeat: no-repeat;
+    background-position: 3px 4px;
+    background-size: 25px 25px;
+}
+
+#rickNmortyQuiz .results .share a.button.email {
+   background-color: #f0a121; background-image: url(../images/icon_email.svg);
+}
+#rickNmortyQuiz .results .share a.button.twitter {
+   background-color: #59adeb; background-image: url(../images/icon_twitter.svg);
+}
