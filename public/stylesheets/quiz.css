@@ -4,10 +4,47 @@ body { background-color: #fff; padding: 20px; }
 
 #rickNmortyQuiz {
    font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 400;
-   width:650px; height:650px;
+   width:650px; height:700px;
    position:relative;
    overflow:hidden;
    color:#fff;
    background:#000 url(../images/backgroundimages_1.png)  no-repeat 0px 0px ;
 }
 
+#rickNmortyQuiz  h1 {font-size: 2em; margin:0px; font-weight:100; text-transform: uppercase;
+                        position:absolute; top:345px; left:36px;
+    }
+
+
+#rickNmortyQuiz  h1 span {display:block; margin:0px; font-family: 'TitilliumWeb', sans-serif;  font-weight:900;}
+
+#rickNmortyQuiz  h2 {font-size: 3em; margin:0px; font-weight:100;}
+#rickNmortyQuiz h3 { font-size:2.4em; margin:0px; font-weight:100; }
+#rickNmortyQuiz p {margin: 0px 0px 14px 0px;}
+#rickNmortyQuiz  .button { display: inline-block; cursor:pointer; background-color:teal;
+                            color:#fff; text-decoration:none;
+                            padding:5px 15px; border-radius: 6px;
+}
+
+/*Intro*/
+#rickNmortyQuiz  .intro { position:absolute; top:440px; left:660px; width:550px; }
+#rickNmortyQuiz .intro p { margin:0px 0px 40px 0px; }
+
+/*Questions*/
+#rickNmortyQuiz .question {  width: 550px; position: absolute; top: 420px; left:40px; }
+#rickNmortyQuiz .question .text { font-size:1.6em; margin: 0px 0px 20px 0px; }
+#rickNmortyQuiz .question .answer {
+    display:inline-block; font-size:1.1em; width:225px; border:2px solid rgba(78, 182, 202, 1);
+    border-radius: 6px; padding:10px; margin: 0px 15px 15px 0px; position: relative;
+}
+#rickNmortyQuiz .question .answer selected { border-color: greenyellow;}
+#rickNmortyQuiz .question .answer correct { border-color: green;}
+
+#rickNmortyQuiz .question .answer::after { 
+    content:''; display: block; width: 20px; height: 20px;
+    background: no-repeat 0px 0px; background-size: 20px 20px;
+    position: absolute; top:5px; right:5px; 
+}
+
+#rickNmortyQuiz  .question .answer.selected::after { background-image: url(../images/icon_incorrect.svg); }
+#rickNmortyQuiz  .question .answer.correct::after { background-image: url(../images/icon_correct.svg); }
