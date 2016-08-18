@@ -1,0 +1,64 @@
+[
+  {
+    "question" : "Rick Sanchez and Morty Smith are based on which two Characters?",
+    "answers"  : [
+      {"id"  : 0, "text" : "Doc Brown and Marty McFly"},
+      {"id"  : 1, "text" : "Simon and Garfunkel"},
+      {"id"  : 2, "text" : "Scooby Doo and Shaggy"},
+      {"id"  : 3, "text" : "Stewie anf Brian Griffin"}
+    ],
+    "correct"  : 1
+  },
+  {
+    "question" : "King Jelly Bean from Rick and Morty was from another cartoon by Roiland called unbelieveable Tales , what was this characters original name",
+    "answers"  : [
+      {"id"  : 0, "text" : "King of the Pedos"},
+      {"id"  : 1, "text" : "Frank Palicky"},
+      {"id"  : 2, "text" : "Crumpy CrumpleStein"},
+      {"id"  : 3, "text" : "Shrimply Pibbles"}
+    ],
+    "correct"  : 2
+  },
+  {
+    "question" : "In the beginning Adult Swim didn't want Justin Roiland to play the voices of either characters who was going to be MOST likely the voice of Rick Sanchez",
+    "answers"  : [
+       {"id"  : 0, "image" : "images/billyWest.jpg" },
+      {"id"  : 1, "image" : "images/danCastellaneta.jpg" },
+      {"id"  : 2, "image" : "images/kathSoucie.jpg" },
+      {"id"  : 3, "image" : "images/nancyCartWright.jpg" }
+    ],
+    "correct"  : 0,
+    "feedback" : "This shouldn't be to difficult but a fun fact!!"
+  },
+  {
+    "question" : "The Opening theme song for Rick & Morty was actually from another show from Roiland called what?",
+    "answers"  : [
+      {"id"  : 0, "text" : "Dog World"},
+      {"id"  : 1, "text" : "House of Cosbys"},
+      {"id"  : 2, "text" : "Adventure Time"},
+      {"id"  : 3, "text" : "Mr Sprinkles"}
+    ],
+    "correct"  : 0
+  },
+  {
+    "question" : "In Rick's Garage there is a box on the shelf called TIME TRAVEL STUFF this is actuall a metaphor to what?",
+    "answers"  : [
+      {"id"  : 0, "text" : "Dog World"},
+      {"id"  : 1, "text" : "House of Cosbys"},
+      {"id"  : 2, "text" : "Adventure Time"},
+      {"id"  : 3, "text" : "Mr Sprinkles"}
+    ],
+    "correct"  : 0
+  },
+  {
+    "question" : "The Opening theme song for Rick & Morty was actually from another show from Roiland called what?",
+    "answers"  : [
+      {"id"  : 0, "text" : "Dog World"},
+      {"id"  : 1, "text" : "House of Cosbys"},
+      {"id"  : 2, "text" : "Adventure Time"},
+      {"id"  : 3, "text" : "Mr Sprinkles"}
+    ],
+    "correct"  : 0
+  }
+
+]

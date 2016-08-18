@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="rickNMortyQuiz"> 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
 	<body>
 
 	
-	<div id="rickNmortyQuiz">
+	<div id="rickNmortyQuiz" ng-controller="MortyController">
 
 		<h1>You don't know JACK S*** about<span> Rick And Morty</span></h1>
 		<div class="progress">
@@ -50,6 +50,7 @@
 
 	</div>
 		
-
+<script type="text/javascript" src="javascripts/angular.min.js"></script>
+<script type="text/javascript" src="javascripts/quiz.js"></script>
 	</body>
 </html>
