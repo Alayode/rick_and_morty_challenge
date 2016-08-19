@@ -13,7 +13,7 @@
 
 		<h1>You don't know JACK S*** about<span> Rick And Morty</span></h1>
 		<div class="progress">
-			<div ng-repeat="myQuestion in myQuestions"></div>
+			<div class= "{{($index === activeQuestion) ? 'on' : 'off' }} " ng-repeat="myQuestion in myQuestions"></div>
 		</div>
 		<div class="intro {{ (activeQuestion > -1 ? 'inactive' : 'active' )}}">
 			<h2>Welcome</h2>
