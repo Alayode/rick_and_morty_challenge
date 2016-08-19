@@ -49,7 +49,7 @@ body { background-color: #fff; padding: 20px; }
 
 
 /*Intro*/
-#rickNmortyQuiz  .intro { position:absolute; top:440px; left:660px; width:550px; }
+#rickNmortyQuiz  .intro { position:absolute; top:460px; left:660px; width:550px; }
 #rickNmortyQuiz .intro p { margin:0px 0px 40px 0px; }
 
 /*Questions*/
@@ -102,3 +102,10 @@ body { background-color: #fff; padding: 20px; }
 #rickNmortyQuiz .results .share a.button.twitter {
    background-color: #59adeb; background-image: url(../images/icon_twitter.svg);
 }
+
+
+#rickNmortyQuiz .active , 
+#rickNmortyQuiz .inactive { transition:left 1.5s ease-in-out;}
+
+#rickNmortyQuiz .active { left:40px; }
+#rickNmortyQuiz .intro.inactive,  #rickNMortyQuiz.inactive.answered{ left:-1350px;}
