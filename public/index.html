@@ -21,8 +21,9 @@
 			<p class="button"  ng-click="activeQuestion = 0"  >Begin</p>
 		</div>
 			<!-- lets add an inline conditional statement-->
-		<div class="question answered 
+		<div class="question 
 		{{ $index === activeQuestion ? 'active' : 'inactive'}}
+		{{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}
 		"  ng-repeat="myQuestion in myQuestions">
 			<p class="text">{{myQuestion.question}}</p>
 			<p class="answer"

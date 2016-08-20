@@ -62,6 +62,10 @@ body { background-color: #fff; padding: 20px; }
 #rickNmortyQuiz .question .answer selected { border-color: greenyellow;}
 #rickNmortyQuiz .question .answer correct { border-color: green;}
 
+/*TODO: change the hover bkgd color to something nicer*/
+#rickNmortyQuiz .question.unanswered .answer { cursor: pointer; }
+#rickNmortyQuiz .question.unanswered .answer:hover { background-color: rgba(238, 189, 102, 0.2); }
+
 #rickNmortyQuiz .question .answer::after { 
     content:''; display: block; width: 20px; height: 20px;
     background: no-repeat 0px 0px; background-size: 20px 20px;

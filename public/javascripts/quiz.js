@@ -16,9 +16,26 @@
 	});
 
 	$scope.chooseAnswer = function ( qIndex,aIndex){
-		alert( qIndex  +  'and' + aIndex );
-	}
+		// alert( qIndex  +  'and' + aIndex );
+		var questionState = $scope.mYquestions[qIndex].questionState;
+		
+		if( questionState != 'answered' ){
+			$scope.myQuestions[qIndex].selectedAnswer = aIndex;
+			var correctAnswer = $scope.myQuestions[qIndex].correct;
+		// lets create a condition to check if the aIndex equals  the correctAnswer
+		//  and we're also going ot set their score to +1'
 
+		if(aIndex === correctAnswer){
+			$scope.myQuestions[qIndex].correctness = 'correct';
+			$scope.score += 1;
+		} else {
+			// if the correctness is not true then we will
+			$scope.myQuestions[qIndex].correctness = 'incorrect';
+		}
+		$scope.myQuestions[qIndex].questionState = 'answered';
+		
+		}
+	}
 
 	}]);
 
