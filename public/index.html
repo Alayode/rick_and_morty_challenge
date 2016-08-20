@@ -20,12 +20,13 @@
 			<p>Click begin to test your knowledge on Rick and Morty</p>
 			<p class="button"  ng-click="activeQuestion = 0"  >Begin</p>
 		</div>
-		<div class="question answered" ng-repeat="myQuestion in myQuestions">
-			<p class="text">{{}}</p>
+
+			<!-- lets add an inline conditional statement-->
+		<div class="question answered 
+		{{ $index === activeQuestion ? 'active' : 'inactive'}}
+		"  ng-repeat="myQuestion in myQuestions">
+			<p class="text">{{myQuestion.question}}</p>
 			<p class="answer"   ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
-			<p class="answer selected ">Answer 2</p>
-			<p class="answer correct">Answer 3</p>
-			<p class="answer">Answer 4</p>
 	
 		<div class=" feedback">
 			<p> You are <strong>Correct</strong>.</p>
