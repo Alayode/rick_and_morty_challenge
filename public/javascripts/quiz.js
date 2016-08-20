@@ -15,6 +15,9 @@
 			$scope.totalQuestions =  $scope.myQuestions.length;
 	});
 
+	$scope.chooseAnswer = function ( qIndex,aIndex){
+		alert( qIndex  +  'and' + aIndex );
+	}
 
 
 	}]);
