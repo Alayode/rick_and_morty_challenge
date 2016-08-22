@@ -26,11 +26,16 @@
 		{{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}
 		"  ng-repeat="myQuestion in myQuestions">
 			<p class="text">{{myQuestion.question}}</p>
-			<p class="answer"
-				ng-click="chooseAnswer($parent.$index,$index)"  
-				ng-repeat="Answer in myQuestions[$index].answers">
-				{{Answer.text}}
-			</p>
+			<p class="answer" 
+					ng-repeat="Answer in myQuestions[$index].answers"
+					ng-class="{ 
+								image:Answer.image,
+								selected:isSelected($parent.$index, $index),
+								correct:isCorrect($parent.$index, $index)
+							  }"
+					ng-style="{ 'background-image':'url({{Answer.image}})'}"
+					ng-click="selectAnswer($parent.$index, $index)">
+					{{Answer.text}}</p>
 		<div class=" feedback">
 			<p> You are <strong>Correct</strong>.</p>
 			<p>Oops! That is not correct.</p>

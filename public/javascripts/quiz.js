@@ -17,7 +17,7 @@
 
 	$scope.chooseAnswer = function ( qIndex,aIndex){
 		// alert( qIndex  +  'and' + aIndex );
-		var questionState = $scope.mYquestions[qIndex].questionState;
+		var questionState = $scope.myQuestions[qIndex].questionState;
 		
 		if( questionState != 'answered' ){
 			$scope.myQuestions[qIndex].selectedAnswer = aIndex;
@@ -36,6 +36,15 @@
 		
 		}
 	}
+	// If the selectedAnswer equals the indexAnwser
+	$scope.isSelected = function(aIndex,qIndex){
+		return  $scope.myQuestions[qIndex].selectedAnswer === aIndex;
+	}
+	// if the questionIndex equal the active index
+	$scope.isCorrect = function(qIndex,aIndex){
+					return  $scope.myQuestions[qIndex].correctAnswer === aIndex;
+				}
+
 
 	}]);
 
