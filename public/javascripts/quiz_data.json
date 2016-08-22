@@ -5,12 +5,13 @@
       {"id"  : 0, "text" : "Doc Brown and Marty McFly"},
       {"id"  : 1, "text" : "Simon and Garfunkel"},
       {"id"  : 2, "text" : "Scooby Doo and Shaggy"},
-      {"id"  : 3, "text" : "Stewie anf Brian Griffin"}
+      {"id"  : 3, "text" : "Stewie and Brian Griffin"}
     ],
-    "correct"  : 1
+    "correct"  : 0,
+    "feedback" : " The series has its origins in an animated parody of Back to the Future created by Roiland for film festival Channel 101.   " 
   },
   {
-    "question" : "King Jelly Bean from Rick and Morty was from another cartoon by Roiland called unbelieveable Tales , what was this characters original name",
+    "question" : "King Jelly Bean from Rick and Morty was from another cartoon by Roiland called Unbelieveable Tales , what was this characters original name",
     "answers"  : [
       {"id"  : 0, "text" : "King of the Pedos"},
       {"id"  : 1, "text" : "Frank Palicky"},

@@ -22,13 +22,14 @@
 		if( questionState != 'answered' ){
 			$scope.myQuestions[qIndex].selectedAnswer = aIndex;
 			var correctAnswer = $scope.myQuestions[qIndex].correct;
+			$scope.myQuestions[qIndex].correctAnswer = correctAnswer;
 		// lets create a condition to check if the aIndex equals  the correctAnswer
 		//  and we're also going ot set their score to +1'
 
 		if(aIndex === correctAnswer){
 			$scope.myQuestions[qIndex].correctness = 'correct';
 			$scope.score += 1;
-		} else {
+		} else {		
 			// if the correctness is not true then we will
 			$scope.myQuestions[qIndex].correctness = 'incorrect';
 		}
@@ -42,9 +43,13 @@
 	}
 	// if the questionIndex equal the active index
 	$scope.isCorrect = function(qIndex,aIndex){
-					return  $scope.myQuestions[qIndex].correctAnswer === aIndex;
+	     return  $scope.myQuestions[qIndex].correctAnswer === aIndex;
 				}
-
+	// applying the selectContinue function to the click event to continue the 
+	// quizApp.
+    $scope.selectContinue = function(){
+				return $scope.activeQuestion += 1;
+			}
 
 	}]);
 

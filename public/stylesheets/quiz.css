@@ -54,7 +54,7 @@ body { background-color: #fff; padding: 20px; }
 
 /*Questions*/
 #rickNmortyQuiz .question {  width: 550px; position: absolute; top: 465px; left:660px; }
-#rickNmortyQuiz .question .text { font-size:1.6em; margin: 0px 0px 20px 0px; }
+#rickNmortyQuiz .question .text { font-size: 1.0em; margin: 0px 0px 20px 0px; }
 #rickNmortyQuiz .question .answer {
     display:inline-block; font-size:1.1em; width:225px; border:2px solid rgba(78, 182, 202, 1);
     border-radius: 6px; padding:10px; margin: 0px 15px 15px 0px; position: relative;
@@ -74,6 +74,15 @@ body { background-color: #fff; padding: 20px; }
 
 #rickNmortyQuiz  .question .answer.selected::after { background-image: url(../images/icon_incorrect.svg); }
 #rickNmortyQuiz  .question .answer.correct::after { background-image: url(../images/icon_correct.svg); }
+
+#rickNmortyQuiz .question .answer.image {
+	min-height: 60px;
+	padding: 0px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+
 
 /* Feedback */
 
