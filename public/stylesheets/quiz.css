@@ -97,7 +97,7 @@ body { background-color: #fff; padding: 20px; }
 
 /* Results */
 
-#rickNmortyQuiz .results { position: absolute; top:440px; left:660px; width:550px; }
+#rickNmortyQuiz .results { position: absolute; top:485px; left:660px; width:550px; }
 
 #rickNmortyQuiz .results .share { margin-top:40px; }
 
