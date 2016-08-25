@@ -122,3 +122,44 @@ body { background-color: #fff; padding: 20px; }
 
 #rickNmortyQuiz .active { left:40px; }
 #rickNmortyQuiz .intro.inactive,  #rickNMortyQuiz.inactive.answered{ left:-1350px;}
+
+/*make the quiz responsive */
+@media screen and (max-width:650px){
+    body { padding: 0; margin: 0; }
+
+    #rickNmortyQuiz {width:320px; background-size: 320px auto; }
+
+    #rickNmortyQuiz h1 { width:300px; font-size: 1.3em; top:25px; left:25px; }
+
+    #rickNmortyQuiz h1 span { line-height:43px; }
+
+    #rickNmortyQuiz h2 { margin: 0px }
+
+    #rickNmortyQuiz h3 { font-size: 2.2em; margin-bottom: 15px; }
+
+    #rickNmortyQuiz .progress { width: 300px;  top: 110px; left:25px; }
+
+    #rickNmortyQuiz .progress  div { width: 25px; height:25px; margin-right:20px;}
+
+    #rickNmortyQuiz .progress div::after { top:-30px; width: 53px; height: 33px; }
+
+    #rickNmortyQuiz .intro { width: 300px; top : 135px; left : 330px; }
+
+    #rickNmortyQuiz .question { width:300px; top:135px; left:330px; }
+
+    #rickNmortyQuiz .question .text { font-size: 1.4em; margin-bottm:15px; }
+
+    #rickNmortyQuiz .question .answer { font-size: 1em; padding:5px 10px; margin-bottom: 10px; }
+
+    #rickNmortyQuiz .question .answer.image{ min-height:45px; background-size: auto 45px; }
+
+    #rickNmortyQuiz .question .answer.image::hover { background-color: #000; }
+    
+    #rickNmortyQuiz .results { width:260px; top:150px; left:330px; }
+    #rickNmortyQuiz .results .share { margin-top:20px; }
+    #rickNmortyQuiz .results a.button { margin-bottom:20px; }
+
+    #rickNmortyQuiz .active { left: 25px; }
+    #rickNmortyQuiz .intro.inactive, #rickNmortyQuiz.inactive { left: -650px; }
+
+}

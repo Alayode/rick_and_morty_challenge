@@ -39,25 +39,27 @@
       {"id"  : 2, "text" : "Adventure Time"},
       {"id"  : 3, "text" : "Mr Sprinkles"}
     ],
-    "correct"  : 0
+    "correct"  : 0,
+     "feedback" : "A 11-minute short TV series about a world where Dogs was the Dominate species and humans was their pat."
   },
   {
-    "question" : "In Rick's Garage there is a box on the shelf called TIME TRAVEL STUFF this is actuall a metaphor to what?",
+    "question" : "In Rick's Garage there is a box on the shelf called TIME TRAVEL STUFF this is actually a metaphor to what?",
     "answers"  : [
-      {"id"  : 0, "text" : "Dog World"},
-      {"id"  : 1, "text" : "House of Cosbys"},
+      {"id"  : 0, "text" : "that Time Travel is on the shelf"},
+      {"id"  : 1, "text" : "That the Time travel should be in the works in future episodes"},
       {"id"  : 2, "text" : "Adventure Time"},
       {"id"  : 3, "text" : "Mr Sprinkles"}
     ],
-    "correct"  : 0
+    "correct"  : 0,
+     "feedback" : "Justin Roiland clearly said that \"Time-Travel is a fucking Nightmare and a just a complete fucking mess\""
   },
   {
-    "question" : "The Opening theme song for Rick & Morty was actually from another show from Roiland called what?",
+    "question" : "Which character from another popular tv series makes a subtle appearance on one of the epsiodes on Rick and Episode??",
     "answers"  : [
-      {"id"  : 0, "text" : "Dog World"},
-      {"id"  : 1, "text" : "House of Cosbys"},
-      {"id"  : 2, "text" : "Adventure Time"},
-      {"id"  : 3, "text" : "Mr Sprinkles"}
+     {"id"  : 0, "image" : "images/billyWest.jpg" },
+      {"id"  : 1, "image" : "images/danCastellaneta.jpg" },
+      {"id"  : 2, "image" : "images/kathSoucie.jpg" },
+      {"id"  : 3, "image" : "images/nancyCartWright.jpg" }
     ],
     "correct"  : 0
   }
