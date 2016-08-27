@@ -59,7 +59,7 @@
 
 				 var emailLink = '<a class="button email" href="mailto:?subject = Try to beat my quiz score!&ampl body=I scored a '+percentage+'% on this quiz about rick and morty. Try to beat my score at '+url+'">Email a friend</a>'
 				  
-				 var twitterLink = '<a class="button twitter" target="_blank" href="http://twitter.com/share?text=I scored a ' + percentage + '%25 on this quiz about Saturn. Try to beat my score at&amp;hashtags=SaturnQuiz&amp;url=' + url + '">Tweet Your Score</a>';
+				 var twitterLink = '<a class="button twitter" target="_blank" href="http://twitter.com/share?text=I scored a ' + percentage + '%25 on this quiz about Rick and Morty. Try to beat my score at&amp;hashtags=RickAndMortyQuiz&amp;url=' + url + '">Tweet Your Score</a>';
 				 var newMarkup = emailLink + twitterLink;
 
 				 return $sce.trustAsHtml(newMarkup);
